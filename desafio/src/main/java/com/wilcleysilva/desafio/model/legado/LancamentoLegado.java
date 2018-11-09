@@ -1,4 +1,4 @@
-package com.wilcleysilva.desafio.legado;
+package com.wilcleysilva.desafio.model.legado;
 
 import java.util.HashMap;
 import java.util.List;

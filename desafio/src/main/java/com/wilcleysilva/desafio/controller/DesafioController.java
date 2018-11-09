@@ -1,13 +1,15 @@
-package com.wilcleysilva.desafio;
+package com.wilcleysilva.desafio.controller;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.wilcleysilva.desafio.legado.LancamentoLegado;
-import com.wilcleysilva.desafio.legado.ListaControleLancamento;
-import com.wilcleysilva.desafio.legado.utils.Util;
+import com.wilcleysilva.desafio.model.LancamentoConta;
+import com.wilcleysilva.desafio.model.ListaLancamento;
+import com.wilcleysilva.desafio.model.legado.LancamentoLegado;
+import com.wilcleysilva.desafio.model.legado.ListaControleLancamento;
+import com.wilcleysilva.desafio.utils.Util;
 
 @org.springframework.web.bind.annotation.RestController
 public class DesafioController {
@@ -15,7 +17,6 @@ public class DesafioController {
 	@RequestMapping("/extratoLancamento")
 	public ListaLancamento lancamentoConta() throws Exception {
 		LancamentoLegado dadosLegado = Util.carregarLancamentoDoArquivo();
-
 		List lancamentos = new ArrayList<LancamentoConta>();
 
 		for (ListaControleLancamento controle : dadosLegado.getListaControleLancamento()) {

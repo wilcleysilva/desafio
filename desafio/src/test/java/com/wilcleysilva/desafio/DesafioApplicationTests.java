@@ -24,8 +24,10 @@ public class DesafioApplicationTests {
 
 	@Test
 	public void contextLoads() throws Exception {
-		mvc.perform(MockMvcRequestBuilders.get("/extratoLancamento").accept(MediaType.APPLICATION_JSON))
-				.andExpect(status().isOk()).andExpect(content().string(equalTo("")));
+		mvc.perform(MockMvcRequestBuilders.get("/extratoLancamento")
+				.accept(MediaType.APPLICATION_JSON))
+				.andExpect(status().isOk())
+				.andExpect(content().string(equalTo("")));
 	}
 
 }
