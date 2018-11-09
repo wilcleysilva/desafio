@@ -1,13 +1,13 @@
-package com.accenture.desafio.legado.utils;
+package com.wilcleysilva.desafio.legado.utils;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import com.accenture.desafio.legado.LancamentoLegado;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.wilcleysilva.desafio.legado.LancamentoLegado;
 
 public class Util {
 
