@@ -1,4 +1,4 @@
-package com.wilcleysilva.desafio.main;
+package com.wilcleysilva.desafio;
 
 import java.util.Arrays;
 

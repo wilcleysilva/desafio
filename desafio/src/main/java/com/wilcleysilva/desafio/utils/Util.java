@@ -18,4 +18,5 @@ public class Util {
 		return mapper.readValue(in, new TypeReference<LancamentoLegado>() {
 		});
 	}
+	
 }
