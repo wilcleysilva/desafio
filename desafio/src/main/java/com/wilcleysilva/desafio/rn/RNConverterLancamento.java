@@ -49,9 +49,9 @@ public class RNConverterLancamento {
 
 		if (pControleLancamento != null) {
 
-			lancamentoContaRetorno.setDtLancamento(pControleLancamento.getDataLancamentoContaCorrenteCliente());
-			lancamentoContaRetorno.setDtConfirmLancamento(pControleLancamento.getDataEfetivaLancamento());
-			lancamentoContaRetorno.setVlFinal(pControleLancamento.getValorLancamentoRemessa().toString());
+			lancamentoContaRetorno.setDtLancamento(pControleLancamento.getDtLancamentoContaCorrenteCliente());
+			lancamentoContaRetorno.setDtConfirmLancamento(pControleLancamento.getDtEfetivaLancamento());
+			lancamentoContaRetorno.setVlFinal(pControleLancamento.getVlLancamentoRemessa().toString());
 
 			LancamentoContaCorrenteCliente lancamentoContaCorrenteCliente = pControleLancamento
 					.getLancamentoContaCorrenteCliente();
@@ -66,8 +66,8 @@ public class RNConverterLancamento {
 				DomicilioBancario domicilioBancario = lancamentoContaCorrenteCliente.getDadosDomicilioBancario();
 
 				if (domicilioBancario != null) {
-					String nomeBanco = (pControleLancamento.getNomeBanco() != null)
-							? pControleLancamento.getNomeBanco().trim()
+					String nomeBanco = (pControleLancamento.getNmBanco() != null)
+							? pControleLancamento.getNmBanco().trim()
 							: "";
 
 					lancamentoContaRetorno

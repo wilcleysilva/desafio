@@ -27,7 +27,14 @@ public class DesafioApplicationTests {
 		mvc.perform(MockMvcRequestBuilders.get("/extratoLancamento")
 				.accept(MediaType.APPLICATION_JSON))
 				.andExpect(status().isOk())
-				.andExpect(content().string(equalTo("")));
+				.andExpect(content().string(equalTo("{\"listaLancamentos\":[{"
+						+ "\"dataLancamento\":\"03/06/2016\",\"descricao\":\"regular\",\"numero\":\"64320236054\","
+						+ "\"situacao\":\"Pago\",\"dataConfirmacao\":\"03/06/2016\","
+						+ "\"dadosBancarios\":\"BANCO ABCD S.A. Ag 1 CC 00000000065470\",\"valorFinal\":\"11499.1\"},"
+						+ "{\"dataLancamento\":\"02/06/2016\",\"descricao\":\"regular\",\"numero\":\"64320626054\","
+						+ "\"situacao\":\"Pago\",\"dataConfirmacao\":\"02/06/2016\","
+						+ "\"dadosBancarios\":\"BANCO ABCD S.A. Ag 1 CC 00000000065470\",\"valorFinal\":\"1960.0\"}]}")))
+				;
 	}
 
 }

@@ -18,172 +18,159 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class ListaControleLancamento {
 
 	@JsonProperty("lancamentoContaCorrenteCliente")
-	private LancamentoContaCorrenteCliente lancamentoContaCorrenteCliente;
+	private LancamentoContaCorrenteCliente aLancamentoContaCorrenteCliente;
+
 	@JsonProperty("dataEfetivaLancamento")
-	private String dataEfetivaLancamento;
+	private String aDtEfetivaLancamento;
+
 	@JsonProperty("dataLancamentoContaCorrenteCliente")
-	private String dataLancamentoContaCorrenteCliente;
+	private String aDtLancamentoContaCorrenteCliente;
+
 	@JsonProperty("numeroEvento")
-	private Long numeroEvento;
+	private Long aNuEvento;
+
 	@JsonProperty("descricaoGrupoPagamento")
-	private String descricaoGrupoPagamento;
+	private String aDsGrupoPagamento;
+
 	@JsonProperty("codigoIdentificadorUnico")
-	private String codigoIdentificadorUnico;
+	private String aCdIdentificadorUnico;
+
 	@JsonProperty("nomeBanco")
-	private String nomeBanco;
+	private String aNmBanco;
+
 	@JsonProperty("quantidadeLancamentoRemessa")
-	private Long quantidadeLancamentoRemessa;
+	private Long aQtLancamentoRemessa;
+
 	@JsonProperty("numeroRaizCNPJ")
-	private String numeroRaizCNPJ;
+	private String aNuRaizCNPJ;
+
 	@JsonProperty("numeroSufixoCNPJ")
-	private String numeroSufixoCNPJ;
+	private String aNuSufixoCNPJ;
+
 	@JsonProperty("valorLancamentoRemessa")
-	private Double valorLancamentoRemessa;
-	@JsonProperty("dateLancamentoContaCorrenteCliente")
-	private Long dateLancamentoContaCorrenteCliente;
-	@JsonProperty("dateEfetivaLancamento")
-	private Long dateEfetivaLancamento;
+	private Double aVlLancamentoRemessa;
+
 	@JsonIgnore
-	private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+	private Map<String, Object> aAdditionalProperties = new HashMap<String, Object>();
 
 	@JsonProperty("lancamentoContaCorrenteCliente")
 	public LancamentoContaCorrenteCliente getLancamentoContaCorrenteCliente() {
-		return lancamentoContaCorrenteCliente;
+		return aLancamentoContaCorrenteCliente;
 	}
 
 	@JsonProperty("lancamentoContaCorrenteCliente")
-	public void setLancamentoContaCorrenteCliente(LancamentoContaCorrenteCliente lancamentoContaCorrenteCliente) {
-		this.lancamentoContaCorrenteCliente = lancamentoContaCorrenteCliente;
+	public void setLancamentoContaCorrenteCliente(LancamentoContaCorrenteCliente pLancamentoContaCorrenteCliente) {
+		this.aLancamentoContaCorrenteCliente = pLancamentoContaCorrenteCliente;
 	}
 
 	@JsonProperty("dataEfetivaLancamento")
-	public String getDataEfetivaLancamento() {
-		return dataEfetivaLancamento;
+	public String getDtEfetivaLancamento() {
+		return aDtEfetivaLancamento;
 	}
 
 	@JsonProperty("dataEfetivaLancamento")
-	public void setDataEfetivaLancamento(String dataEfetivaLancamento) {
-		this.dataEfetivaLancamento = dataEfetivaLancamento;
+	public void setDtEfetivaLancamento(String pDtEfetivaLancamento) {
+		this.aDtEfetivaLancamento = pDtEfetivaLancamento;
 	}
 
 	@JsonProperty("dataLancamentoContaCorrenteCliente")
-	public String getDataLancamentoContaCorrenteCliente() {
-		return dataLancamentoContaCorrenteCliente;
+	public String getDtLancamentoContaCorrenteCliente() {
+		return aDtLancamentoContaCorrenteCliente;
 	}
 
 	@JsonProperty("dataLancamentoContaCorrenteCliente")
-	public void setDataLancamentoContaCorrenteCliente(String dataLancamentoContaCorrenteCliente) {
-		this.dataLancamentoContaCorrenteCliente = dataLancamentoContaCorrenteCliente;
+	public void setDtLancamentoContaCorrenteCliente(String pDtLancamentoContaCorrenteCliente) {
+		this.aDtLancamentoContaCorrenteCliente = pDtLancamentoContaCorrenteCliente;
 	}
 
 	@JsonProperty("numeroEvento")
-	public Long getNumeroEvento() {
-		return numeroEvento;
+	public Long getNuEvento() {
+		return aNuEvento;
 	}
 
 	@JsonProperty("numeroEvento")
-	public void setNumeroEvento(Long numeroEvento) {
-		this.numeroEvento = numeroEvento;
+	public void setNuEvento(Long pNuEvento) {
+		this.aNuEvento = pNuEvento;
 	}
 
 	@JsonProperty("descricaoGrupoPagamento")
-	public String getDescricaoGrupoPagamento() {
-		return descricaoGrupoPagamento;
+	public String getDsGrupoPagamento() {
+		return aDsGrupoPagamento;
 	}
 
 	@JsonProperty("descricaoGrupoPagamento")
-	public void setDescricaoGrupoPagamento(String descricaoGrupoPagamento) {
-		this.descricaoGrupoPagamento = descricaoGrupoPagamento;
+	public void setDsGrupoPagamento(String pDsGrupoPagamento) {
+		this.aDsGrupoPagamento = pDsGrupoPagamento;
 	}
 
 	@JsonProperty("codigoIdentificadorUnico")
-	public String getCodigoIdentificadorUnico() {
-		return codigoIdentificadorUnico;
+	public String getCdIdentificadorUnico() {
+		return aCdIdentificadorUnico;
 	}
 
 	@JsonProperty("codigoIdentificadorUnico")
-	public void setCodigoIdentificadorUnico(String codigoIdentificadorUnico) {
-		this.codigoIdentificadorUnico = codigoIdentificadorUnico;
+	public void setCdIdentificadorUnico(String pCdIdentificadorUnico) {
+		this.aCdIdentificadorUnico = pCdIdentificadorUnico;
 	}
 
 	@JsonProperty("nomeBanco")
-	public String getNomeBanco() {
-		return nomeBanco;
+	public String getNmBanco() {
+		return aNmBanco;
 	}
 
 	@JsonProperty("nomeBanco")
-	public void setNomeBanco(String nomeBanco) {
-		this.nomeBanco = nomeBanco;
+	public void setNmBanco(String pNmBanco) {
+		this.aNmBanco = pNmBanco;
 	}
 
 	@JsonProperty("quantidadeLancamentoRemessa")
-	public Long getQuantidadeLancamentoRemessa() {
-		return quantidadeLancamentoRemessa;
+	public Long getQtLancamentoRemessa() {
+		return aQtLancamentoRemessa;
 	}
 
 	@JsonProperty("quantidadeLancamentoRemessa")
-	public void setQuantidadeLancamentoRemessa(Long quantidadeLancamentoRemessa) {
-		this.quantidadeLancamentoRemessa = quantidadeLancamentoRemessa;
+	public void setQtLancamentoRemessa(Long pQtGrupoPagamento) {
+		this.aQtLancamentoRemessa = pQtGrupoPagamento;
 	}
 
 	@JsonProperty("numeroRaizCNPJ")
-	public String getNumeroRaizCNPJ() {
-		return numeroRaizCNPJ;
+	public String getNuRaizCNPJ() {
+		return aNuRaizCNPJ;
 	}
 
 	@JsonProperty("numeroRaizCNPJ")
-	public void setNumeroRaizCNPJ(String numeroRaizCNPJ) {
-		this.numeroRaizCNPJ = numeroRaizCNPJ;
+	public void setNuRaizCNPJ(String pNuRaizCNPJ) {
+		this.aNuRaizCNPJ = pNuRaizCNPJ;
 	}
 
 	@JsonProperty("numeroSufixoCNPJ")
-	public String getNumeroSufixoCNPJ() {
-		return numeroSufixoCNPJ;
+	public String getNuSufixoCNPJ() {
+		return aNuSufixoCNPJ;
 	}
 
 	@JsonProperty("numeroSufixoCNPJ")
-	public void setNumeroSufixoCNPJ(String numeroSufixoCNPJ) {
-		this.numeroSufixoCNPJ = numeroSufixoCNPJ;
+	public void setNuSufixoCNPJ(String pNuSufixoCNPJ) {
+		this.aNuSufixoCNPJ = pNuSufixoCNPJ;
 	}
 
 	@JsonProperty("valorLancamentoRemessa")
-	public Double getValorLancamentoRemessa() {
-		return valorLancamentoRemessa;
+	public Double getVlLancamentoRemessa() {
+		return aVlLancamentoRemessa;
 	}
 
 	@JsonProperty("valorLancamentoRemessa")
-	public void setValorLancamentoRemessa(Double valorLancamentoRemessa) {
-		this.valorLancamentoRemessa = valorLancamentoRemessa;
-	}
-
-	@JsonProperty("dateLancamentoContaCorrenteCliente")
-	public Long getDateLancamentoContaCorrenteCliente() {
-		return dateLancamentoContaCorrenteCliente;
-	}
-
-	@JsonProperty("dateLancamentoContaCorrenteCliente")
-	public void setDateLancamentoContaCorrenteCliente(Long dateLancamentoContaCorrenteCliente) {
-		this.dateLancamentoContaCorrenteCliente = dateLancamentoContaCorrenteCliente;
-	}
-
-	@JsonProperty("dateEfetivaLancamento")
-	public Long getDateEfetivaLancamento() {
-		return dateEfetivaLancamento;
-	}
-
-	@JsonProperty("dateEfetivaLancamento")
-	public void setDateEfetivaLancamento(Long dateEfetivaLancamento) {
-		this.dateEfetivaLancamento = dateEfetivaLancamento;
+	public void setVlLancamentoRemessa(Double pVlLancamentoRemessa) {
+		this.aVlLancamentoRemessa = pVlLancamentoRemessa;
 	}
 
 	@JsonAnyGetter
 	public Map<String, Object> getAdditionalProperties() {
-		return this.additionalProperties;
+		return this.aAdditionalProperties;
 	}
 
 	@JsonAnySetter
 	public void setAdditionalProperty(String name, Object value) {
-		this.additionalProperties.put(name, value);
+		this.aAdditionalProperties.put(name, value);
 	}
 
 }

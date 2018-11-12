@@ -16,76 +16,81 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class LancamentoContaCorrenteCliente {
 
 	@JsonProperty("numeroRemessaBanco")
-	private Long numeroRemessaBanco;
+	private Long aNuRemessaBanco;
+	
 	@JsonProperty("nomeSituacaoRemessa")
-	private String nomeSituacaoRemessa;
+	private String aNmSituacaoRemessa;
+	
 	@JsonProperty("dadosDomicilioBancario")
-	private DomicilioBancario dadosDomicilioBancario;
+	private DomicilioBancario aDadosDomicilioBancario;
+	
 	@JsonProperty("nomeTipoOperacao")
-	private String nomeTipoOperacao;
+	private String aNmTipoOperacao;
+	
 	@JsonProperty("dadosAnaliticoLancamentoFinanceiroCliente")
-	private List<Object> dadosAnaliticoLancamentoFinanceiroCliente = null;
+	private List<Object> aDadosAnaliticoLancamentoFinanceiroCliente = null;
+	
 	@JsonIgnore
-	private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+	private Map<String, Object> aAdditionalProperties = new HashMap<String, Object>();
 
 	@JsonProperty("numeroRemessaBanco")
 	public Long getNumeroRemessaBanco() {
-		return numeroRemessaBanco;
+		return aNuRemessaBanco;
 	}
 
 	@JsonProperty("numeroRemessaBanco")
-	public void setNumeroRemessaBanco(Long numeroRemessaBanco) {
-		this.numeroRemessaBanco = numeroRemessaBanco;
+	public void setNumeroRemessaBanco(Long pNuRemessaBanco) {
+		this.aNuRemessaBanco = pNuRemessaBanco;
 	}
 
 	@JsonProperty("nomeSituacaoRemessa")
 	public String getNomeSituacaoRemessa() {
-		return nomeSituacaoRemessa;
+		return aNmSituacaoRemessa;
 	}
 
 	@JsonProperty("nomeSituacaoRemessa")
-	public void setNomeSituacaoRemessa(String nomeSituacaoRemessa) {
-		this.nomeSituacaoRemessa = nomeSituacaoRemessa;
+	public void setNomeSituacaoRemessa(String pNmSituacaoRemessa) {
+		this.aNmSituacaoRemessa = pNmSituacaoRemessa;
 	}
 
 	@JsonProperty("dadosDomicilioBancario")
 	public DomicilioBancario getDadosDomicilioBancario() {
-		return dadosDomicilioBancario;
+		return aDadosDomicilioBancario;
 	}
 
 	@JsonProperty("dadosDomicilioBancario")
-	public void setDadosDomicilioBancario(DomicilioBancario dadosDomicilioBancario) {
-		this.dadosDomicilioBancario = dadosDomicilioBancario;
+	public void setDadosDomicilioBancario(DomicilioBancario pDadosDomicilioBancario) {
+		this.aDadosDomicilioBancario = pDadosDomicilioBancario;
 	}
 
 	@JsonProperty("nomeTipoOperacao")
 	public String getNomeTipoOperacao() {
-		return nomeTipoOperacao;
+		return aNmTipoOperacao;
 	}
 
 	@JsonProperty("nomeTipoOperacao")
-	public void setNomeTipoOperacao(String nomeTipoOperacao) {
-		this.nomeTipoOperacao = nomeTipoOperacao;
+	public void setNomeTipoOperacao(String pNmTipoOperacao) {
+		this.aNmTipoOperacao = pNmTipoOperacao;
 	}
 
 	@JsonProperty("dadosAnaliticoLancamentoFinanceiroCliente")
 	public List<Object> getDadosAnaliticoLancamentoFinanceiroCliente() {
-		return dadosAnaliticoLancamentoFinanceiroCliente;
+		return aDadosAnaliticoLancamentoFinanceiroCliente;
 	}
 
 	@JsonProperty("dadosAnaliticoLancamentoFinanceiroCliente")
-	public void setDadosAnaliticoLancamentoFinanceiroCliente(List<Object> dadosAnaliticoLancamentoFinanceiroCliente) {
-		this.dadosAnaliticoLancamentoFinanceiroCliente = dadosAnaliticoLancamentoFinanceiroCliente;
+	public void setDadosAnaliticoLancamentoFinanceiroCliente(List<Object> pDadosAnaliticoLancamentoFinanceiroCliente) {
+		this.aDadosAnaliticoLancamentoFinanceiroCliente = pDadosAnaliticoLancamentoFinanceiroCliente;
 	}
 
 	@JsonAnyGetter
 	public Map<String, Object> getAdditionalProperties() {
-		return this.additionalProperties;
+		return this.aAdditionalProperties;
 	}
 
 	@JsonAnySetter
 	public void setAdditionalProperty(String name, Object value) {
-		this.additionalProperties.put(name, value);
+		this.aAdditionalProperties.put(name, value);
 	}
 
 }

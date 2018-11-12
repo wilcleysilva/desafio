@@ -30,58 +30,72 @@ public class LancamentoConta {
 	@JsonProperty("valorFinal")
 	private String aVlFinal;
 
+	@JsonProperty("dataLancamento")
 	public String getDtLancamento() {
 		return aDtLancamento;
 	}
-
+	
+	@JsonProperty("dataLancamento")
 	public void setDtLancamento(String pDtLancamento) {
 		this.aDtLancamento = pDtLancamento;
 	}
 
+	@JsonProperty("descricao")
 	public String getDsLancamento() {
 		return aDsLancamento;
 	}
 
+	@JsonProperty("descricao")
 	public void setDsLancamento(String pDsLancamento) {
 		this.aDsLancamento = pDsLancamento;
 	}
 
+	@JsonProperty("numero")
 	public String getNuLancamento() {
 		return aNuLancamento;
 	}
 
+	@JsonProperty("numero")
 	public void setNuLancamento(String pNuLancamento) {
 		this.aNuLancamento = pNuLancamento;
 	}
 
-	public String getaSiLancamento() {
+	@JsonProperty("situacao")
+	public String getSiLancamento() {
 		return aSiLancamento;
 	}
 
+	@JsonProperty("situacao")
 	public void setSiLancamento(String pSiLancamento) {
 		this.aSiLancamento = pSiLancamento;
 	}
 
+	@JsonProperty("dataConfirmacao")
 	public String getDtConfirmLancamento() {
 		return aDtConfirmLancamento;
 	}
 
+	@JsonProperty("dataConfirmacao")
 	public void setDtConfirmLancamento(String pDtConfirmLancamento) {
 		this.aDtConfirmLancamento = pDtConfirmLancamento;
 	}
-
+	
+	@JsonProperty("dadosBancarios")
 	public String getDadosBancarios() {
 		return aDadosBancarios;
 	}
 
+	@JsonProperty("dadosBancarios")
 	public void setDadosBancarios(String pDadosBancarios) {
 		this.aDadosBancarios = pDadosBancarios;
 	}
 
+	@JsonProperty("valorFinal")
 	public String getVlFinal() {
 		return aVlFinal;
 	}
 
+	@JsonProperty("valorFinal")
 	public void setVlFinal(String pVlFinal) {
 		this.aVlFinal = pVlFinal;
 	}

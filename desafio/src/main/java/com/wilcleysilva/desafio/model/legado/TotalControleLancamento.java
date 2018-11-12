@@ -15,52 +15,55 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class TotalControleLancamento {
 
 	@JsonProperty("quantidadeLancamentos")
-	private Long quantidadeLancamentos;
+	private Long aQtLancamentos;
+	
 	@JsonProperty("quantidadeRemessas")
-	private Long quantidadeRemessas;
+	private Long aQtRemessas;
+	
 	@JsonProperty("valorLancamentos")
-	private Double valorLancamentos;
+	private Double aVlLancamentos;
+	
 	@JsonIgnore
-	private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+	private Map<String, Object> aAdditionalProperties = new HashMap<String, Object>();
 
 	@JsonProperty("quantidadeLancamentos")
-	public Long getQuantidadeLancamentos() {
-		return quantidadeLancamentos;
+	public Long getQtLancamentos() {
+		return aQtLancamentos;
 	}
 
 	@JsonProperty("quantidadeLancamentos")
-	public void setQuantidadeLancamentos(Long quantidadeLancamentos) {
-		this.quantidadeLancamentos = quantidadeLancamentos;
+	public void setQtLancamentos(Long pQtLancamentos) {
+		this.aQtLancamentos = pQtLancamentos;
 	}
 
 	@JsonProperty("quantidadeRemessas")
-	public Long getQuantidadeRemessas() {
-		return quantidadeRemessas;
+	public Long getQtRemessas() {
+		return aQtRemessas;
 	}
 
 	@JsonProperty("quantidadeRemessas")
-	public void setQuantidadeRemessas(Long quantidadeRemessas) {
-		this.quantidadeRemessas = quantidadeRemessas;
+	public void setQtRemessas(Long pQtRemessas) {
+		this.aQtRemessas = pQtRemessas;
 	}
 
 	@JsonProperty("valorLancamentos")
-	public Double getValorLancamentos() {
-		return valorLancamentos;
+	public Double getVlLancamentos() {
+		return aVlLancamentos;
 	}
 
 	@JsonProperty("valorLancamentos")
-	public void setValorLancamentos(Double valorLancamentos) {
-		this.valorLancamentos = valorLancamentos;
+	public void setValorLancamentos(Double pVlLancamentos) {
+		this.aVlLancamentos = pVlLancamentos;
 	}
 
 	@JsonAnyGetter
 	public Map<String, Object> getAdditionalProperties() {
-		return this.additionalProperties;
+		return this.aAdditionalProperties;
 	}
 
 	@JsonAnySetter
 	public void setAdditionalProperty(String name, Object value) {
-		this.additionalProperties.put(name, value);
+		this.aAdditionalProperties.put(name, value);
 	}
 
 }

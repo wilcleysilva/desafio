@@ -16,76 +16,81 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class LancamentoLegado {
 
 	@JsonProperty("totalControleLancamento")
-	private TotalControleLancamento totalControleLancamento;
+	private TotalControleLancamento aTotalControleLancamento;
+
 	@JsonProperty("listaControleLancamento")
-	private List<ListaControleLancamento> listaControleLancamento = null;
+	private List<ListaControleLancamento> aListaControleLancamento = null;
+
 	@JsonProperty("indice")
-	private Long indice;
+	private Long aIndice;
+
 	@JsonProperty("tamanhoPagina")
-	private Long tamanhoPagina;
+	private Long aTamanhoPagina;
+
 	@JsonProperty("totalElements")
-	private Long totalElements;
+	private Long aTotalElements;
+
 	@JsonIgnore
-	private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+	private Map<String, Object> aAdditionalProperties = new HashMap<String, Object>();
 
 	@JsonProperty("totalControleLancamento")
 	public TotalControleLancamento getTotalControleLancamento() {
-		return totalControleLancamento;
+		return aTotalControleLancamento;
 	}
 
 	@JsonProperty("totalControleLancamento")
-	public void setTotalControleLancamento(TotalControleLancamento totalControleLancamento) {
-		this.totalControleLancamento = totalControleLancamento;
+	public void setTotalControleLancamento(TotalControleLancamento pTotalControleLancamento) {
+		this.aTotalControleLancamento = pTotalControleLancamento;
 	}
 
 	@JsonProperty("listaControleLancamento")
 	public List<ListaControleLancamento> getListaControleLancamento() {
-		return listaControleLancamento;
+		return aListaControleLancamento;
 	}
 
 	@JsonProperty("listaControleLancamento")
-	public void setListaControleLancamento(List<ListaControleLancamento> listaControleLancamento) {
-		this.listaControleLancamento = listaControleLancamento;
+	public void setListaControleLancamento(List<ListaControleLancamento> pListaControleLancamento) {
+		this.aListaControleLancamento = pListaControleLancamento;
 	}
 
 	@JsonProperty("indice")
 	public Long getIndice() {
-		return indice;
+		return aIndice;
 	}
 
 	@JsonProperty("indice")
-	public void setIndice(Long indice) {
-		this.indice = indice;
+	public void setIndice(Long pIndice) {
+		this.aIndice = pIndice;
 	}
 
 	@JsonProperty("tamanhoPagina")
 	public Long getTamanhoPagina() {
-		return tamanhoPagina;
+		return aTamanhoPagina;
 	}
 
 	@JsonProperty("tamanhoPagina")
-	public void setTamanhoPagina(Long tamanhoPagina) {
-		this.tamanhoPagina = tamanhoPagina;
+	public void setTamanhoPagina(Long pTamanhoPagina) {
+		this.aTamanhoPagina = pTamanhoPagina;
 	}
 
 	@JsonProperty("totalElements")
 	public Long getTotalElements() {
-		return totalElements;
+		return aTotalElements;
 	}
 
 	@JsonProperty("totalElements")
-	public void setTotalElements(Long totalElements) {
-		this.totalElements = totalElements;
+	public void setTotalElements(Long pTotalElements) {
+		this.aTotalElements = pTotalElements;
 	}
 
 	@JsonAnyGetter
 	public Map<String, Object> getAdditionalProperties() {
-		return this.additionalProperties;
+		return this.aAdditionalProperties;
 	}
 
 	@JsonAnySetter
 	public void setAdditionalProperty(String name, Object value) {
-		this.additionalProperties.put(name, value);
+		this.aAdditionalProperties.put(name, value);
 	}
 
 }

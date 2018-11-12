@@ -2,6 +2,7 @@ package com.wilcleysilva.desafio.model.legado;
 
 import java.util.HashMap;
 import java.util.Map;
+
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -14,52 +15,55 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class DomicilioBancario {
 
 	@JsonProperty("codigoBanco")
-	private Integer codigoBanco;
+	private Integer aCdBanco;
+
 	@JsonProperty("numeroAgencia")
-	private Integer numeroAgencia;
+	private Integer aNuAgencia;
+
 	@JsonProperty("numeroContaCorrente")
-	private String numeroContaCorrente;
+	private String aNuContaCorrente;
+
 	@JsonIgnore
-	private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+	private Map<String, Object> aAdditionalProperties = new HashMap<String, Object>();
 
 	@JsonProperty("codigoBanco")
 	public Integer getCodigoBanco() {
-		return codigoBanco;
+		return aCdBanco;
 	}
 
 	@JsonProperty("codigoBanco")
-	public void setCodigoBanco(Integer codigoBanco) {
-		this.codigoBanco = codigoBanco;
+	public void setCodigoBanco(Integer pCdBanco) {
+		this.aCdBanco = pCdBanco;
 	}
 
 	@JsonProperty("numeroAgencia")
 	public Integer getNumeroAgencia() {
-		return numeroAgencia;
+		return aNuAgencia;
 	}
 
 	@JsonProperty("numeroAgencia")
-	public void setNumeroAgencia(Integer numeroAgencia) {
-		this.numeroAgencia = numeroAgencia;
+	public void setNumeroAgencia(Integer paNuAgencia) {
+		this.aNuAgencia = paNuAgencia;
 	}
 
 	@JsonProperty("numeroContaCorrente")
 	public String getNumeroContaCorrente() {
-		return numeroContaCorrente;
+		return aNuContaCorrente;
 	}
 
 	@JsonProperty("numeroContaCorrente")
-	public void setNumeroContaCorrente(String numeroContaCorrente) {
-		this.numeroContaCorrente = numeroContaCorrente;
+	public void setNumeroContaCorrente(String pNuContaCorrente) {
+		this.aNuContaCorrente = pNuContaCorrente;
 	}
 
 	@JsonAnyGetter
 	public Map<String, Object> getAdditionalProperties() {
-		return this.additionalProperties;
+		return this.aAdditionalProperties;
 	}
 
 	@JsonAnySetter
 	public void setAdditionalProperty(String name, Object value) {
-		this.additionalProperties.put(name, value);
+		this.aAdditionalProperties.put(name, value);
 	}
 
 }
